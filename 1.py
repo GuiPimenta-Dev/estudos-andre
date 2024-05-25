@@ -60,9 +60,11 @@ print(conversao)
 # - Operações aritméticas básicas (*, **)
 # - Impressão de dados (print)
 
-area =int(input("insira o valor de π"))
-conversao =area*raio^2
-
+'''
+raio =int(input("insira o valor do raio do circulo"))
+area =3.14159*raio**2
+print(area)
+'''
 # Exercicio 5: Idade do Usuário
 # Instrucao: Escreva um programa que peça ao usuário o nome e o ano de nascimento e calcule a idade dele.
 # Resposta: "Olá, [nome]. Você tem [idade] anos."
@@ -71,6 +73,11 @@ conversao =area*raio^2
 # - Conversão de tipos (int)
 # - Operações aritméticas básicas (-)
 # - Impressão de dados (print)
+'''
+nome =input("Insira o seu nome") 
+ano =int(input("insira o ano de nascimento"))
+idade = 2024-ano 
+print("Olá",nome)
+print("Você tem",idade,"anos")
 
-# Código aqui
-
+'''
