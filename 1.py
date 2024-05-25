@@ -76,8 +76,11 @@ print(area)
 '''
 nome =input("Insira o seu nome") 
 nascimento =int(input("insira o ano de nascimento"))
-idade = 2024-nascimento 
-print("Olá", nome +"! Você tem",idade,"anos")
+import datetime
+hoje =datetime.date.today()
+idade = hoje.year - nascimento
+print(f"Olá, {nome} Você tem, {idade}, anos")
 '''
+
 
 
