@@ -75,9 +75,9 @@ print(area)
 # - Impressão de dados (print)
 '''
 nome =input("Insira o seu nome") 
-ano =int(input("insira o ano de nascimento"))
-idade = 2024-ano 
-print("Olá",nome)
-print("Você tem",idade,"anos")
-
+nascimento =int(input("insira o ano de nascimento"))
+idade = 2024-nascimento 
+print("Olá", nome +"! Você tem",idade,"anos")
 '''
+
+
