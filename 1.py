@@ -108,15 +108,17 @@ print(f"Ontem foi {ontem.strftime('%d-%m-%Y')}. Hoje é {agora.strftime('%d-%m-%
 # - Entrada de dados (input)
 # - Manipulação de strings 
 # - Impressão de dados (print)
- 
+'''
+
 frase = input("insira a frase")
 tamanho_frase = 0
 
 for caractere in frase:
     if caractere.isalpha():  
         tamanho_frase += 1
-        
+
 print(f"A Frase tem {tamanho_frase} letras.")
+'''
 
 # Exercicio 8: Conversor de string para maiúsculas, minúsculas e título
 # Instrucao: Escreva um programa que peça ao usuário uma frase e converta todas as letras para maiúsculas, minusculas e titulo.
@@ -125,5 +127,13 @@ print(f"A Frase tem {tamanho_frase} letras.")
 # - Entrada de dados (input)
 # - Manipulação de strings (lower, upper, title)
 # - Impressão de dados (print)
+'''
+frase = input("Digite uma frase: ")
 
-# Código aqui
+maiusculas = frase.upper()
+minusculas = frase.lower()
+titulo = frase.title()
+
+print(f"Minuscula: {minusculas}. Maiuscula: {maiusculas}. Titulo: {titulo}.")
+
+'''
