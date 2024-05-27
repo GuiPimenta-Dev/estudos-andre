@@ -65,6 +65,7 @@ raio =int(input("insira o valor do raio do circulo"))
 area =3.14159*raio**2
 print(area)
 '''
+
 # Exercicio 5: Idade do Usuário
 # Instrucao: Escreva um programa que peça ao usuário o nome e o ano de nascimento e calcule a idade dele.
 # Resposta: "Olá, [nome]. Você tem [idade] anos."
@@ -82,5 +83,30 @@ idade = hoje.year - nascimento
 print(f"Olá, {nome} Você tem, {idade}, anos")
 '''
 
+# Exercicio 6: Mostar dia atual, ontem e amanhã
+# Instrucao: Escreva um programa que mostre o dia atual, o dia de ontem e o dia de amanhã.
+# Resposta: "Ontem foi [dia]. Hoje é [dia]. Amanhã será [dia]."
+# Tópicos para estudar:
+# - Manipulação de datas (datetime)
+# - Impressão de dados (print)
 
+# Código aqui
 
+# Exercicio 7: Contador de letras
+# Instrucao: Escreva um programa que peça ao usuário uma frase e conte quantas letras há na frase e devolva a primeira e a última palavra.
+# Resposta: "A frase tem [n] letras."
+# Tópicos para estudar:
+# - Entrada de dados (input)
+# - Manipulação de strings 
+# - Impressão de dados (print)
+
+# Código aqui
+
+# Exercicio 7: Conversor de string para maiúsculas, minúsculas e título
+# Instrucao: Escreva um programa que peça ao usuário uma frase e converta todas as letras para maiúsculas, minusculas e titulo.
+# Tópicos para estudar:
+# - Entrada de dados (input)
+# - Manipulação de strings (lower, upper, title)
+# - Impressão de dados (print)
+
+# Código aqui
