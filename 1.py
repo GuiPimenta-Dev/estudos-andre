@@ -104,6 +104,7 @@ print(f"Olá, {nome} Você tem, {idade}, anos")
 
 # Exercicio 7: Conversor de string para maiúsculas, minúsculas e título
 # Instrucao: Escreva um programa que peça ao usuário uma frase e converta todas as letras para maiúsculas, minusculas e titulo.
+# Resposta: "Minuscula: [frase]. Maiuscula: [frase]. Titulo: [frase]."
 # Tópicos para estudar:
 # - Entrada de dados (input)
 # - Manipulação de strings (lower, upper, title)
