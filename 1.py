@@ -89,7 +89,7 @@ print(f"Olá, {nome} Você tem, {idade}, anos")
 # Tópicos para estudar:
 # - Manipulação de datas (datetime)
 # - Impressão de dados (print)
-
+'''
 from datetime import datetime, timedelta
 
 anos_print = 2024
@@ -100,7 +100,7 @@ ontem = (datetime.now() - timedelta(days=1)).replace(year=anos_print, hour=0, mi
 amanha = (datetime.now() + timedelta(days=1)).replace(year=anos_print, hour=0, minute=0, second=0, microsecond=0)
 
 print(f"Ontem foi {ontem.strftime('%d-%m-%Y')}. Hoje é {agora.strftime('%d-%m-%Y')}. Amanhã será {amanha.strftime('%d-%m-%Y')}")
-
+'''
 # Exercicio 7: Contador de letras
 # Instrucao: Escreva um programa que peça ao usuário uma frase e conte quantas letras há na frase e devolva a primeira e a última palavra.
 # Resposta: "A frase tem [n] letras."
@@ -108,8 +108,15 @@ print(f"Ontem foi {ontem.strftime('%d-%m-%Y')}. Hoje é {agora.strftime('%d-%m-%
 # - Entrada de dados (input)
 # - Manipulação de strings 
 # - Impressão de dados (print)
+ 
+frase = input("insira a frase")
+tamanho_frase = 0
 
-# Código aqui
+for caractere in frase:
+    if caractere.isalpha():  
+        tamanho_frase += 1
+        
+print(f"A Frase tem {tamanho_frase} letras.")
 
 # Exercicio 8: Conversor de string para maiúsculas, minúsculas e título
 # Instrucao: Escreva um programa que peça ao usuário uma frase e converta todas as letras para maiúsculas, minusculas e titulo.
