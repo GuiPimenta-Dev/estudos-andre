@@ -127,7 +127,7 @@ print(f"A Frase tem {tamanho_frase} letras.")
 # - Entrada de dados (input)
 # - Manipulação de strings (lower, upper, title)
 # - Impressão de dados (print)
-
+'''
 frase = input("Digite uma frase: ")
 
 maiusculas = frase.upper()
@@ -135,3 +135,4 @@ minusculas = frase.lower()
 titulo = frase.title()
 
 print(f"Minuscula: {minusculas}. Maiuscula: {maiusculas}. Titulo: {titulo}.")
+'''
