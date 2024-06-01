@@ -21,16 +21,7 @@
 
 # Código aqui
 
-# Exercicio 2: Contagem de Vogais
-# Instrucao: Escreva um programa que peça ao usuário uma frase e conte o número de vogais (a, e, i, o, u) na frase.
-# Tópicos para estudar:
-# - Entrada de dados (input)
-# - Laços de repetição (for)
-# - Estruturas condicionais (if, in)
-# - Funções de string (lower)
-# - Impressão de dados (print)
 
-# Código aqui
 
 
 
