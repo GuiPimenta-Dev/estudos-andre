@@ -33,6 +33,24 @@ else:
 '''
 
 
+# Exercício 2: Números Pares e Ímpares
+# Instrucao: Escreva um programa que peça ao usuário um número inteiro e verifique se ele é par ou ímpar.
+# Tópicos para estudar:
+# - Entrada de dados (input)
+# - Conversão de tipos (int)
+# - Operadores aritméticos (%)
+# - Estruturas condicionais (if, else)
+# - Impressão de dados (print)
+
+
+# Exercício 3: Verificação de Idade
+# Instrucao: Escreva um programa que peça ao usuário sua idade e verifique se ele é maior de idade (18 anos ou mais).
+# Tópicos para estudar:
+# - Entrada de dados (input)
+# - Conversão de tipos (int)
+# - Estruturas condicionais (if, else)
+# - Impressão de dados (print)
+
 
 
 
