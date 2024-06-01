@@ -18,8 +18,22 @@
 # - Manipulação de strings (lower)
 # - Estruturas condicionais (if, else)
 # - Impressão de dados (print)
+'''
+palavra = input("insira uma palavra")
+palavra_2 = input("insira uma palavra")
 
-# Código aqui
+minusculo = palavra.lower()
+minusculo_2 = palavra_2.lower()
+  
+
+if minusculo == minusculo_2:
+    print("são iguais")
+else:
+    print("não são iguais")
+'''
+
+
+
 
 
 
