@@ -53,6 +53,10 @@ else:
 
 
 
+# Exercício 4: Devolva a priemira e ultima palavra de uma frase
+# Instrucao: Escreva um programa que peça ao usuário uma frase e devolva na tela a primeira palavra e a ultima dessa frase.
+# - Entrada de dados (input)
+# - Lista 
 
 
 
