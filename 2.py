@@ -73,9 +73,10 @@ frase = input("insira a frase")
 palavra =frase.split()
 primeira_frase=palavra[0]
 ultima_palavra=palavra[-1]
+meio_frase= palavra[1:-1]
+print("Primeira frase:",primeira_frase)
+print("Ultima frase", ultima_palavra)
+print("Meio da frase", meio_frase)
 
-print("Primeira palavra:",primeira_frase)
-print("Ultima palavra", ultima_palavra)
 '''
-
  
