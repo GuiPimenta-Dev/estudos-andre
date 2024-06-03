@@ -80,3 +80,24 @@ print("Meio da frase", meio_frase)
 
 '''
  
+ # Exercício 5: Escreva um programa que peça ao usuário uma frase e devolva na tela o número de palavras dessa frase.
+# - Entrada de dados (input)
+# - Lista
+
+# Exercício 6: Escreva um programa que peça ao usuário uma frase e devolva na tela a palavra mais longa dessa frase.
+# - Entrada de dados (input)
+# - Lista
+
+# Exercício 7: Escreva um programa que peça ao usuário uma frase e devolva na tela as palavras dessa frase em ordem inversa.
+# - Entrada de dados (input)
+# - Lista
+
+# Exercício 8: Escreva um programa que peça ao usuário uma frase e devolva na tela a frase sem palavras duplicadas.
+# - Entrada de dados (input)
+# - Lista
+# - Conjuntos (Set)
+
+# Exercício 9: Escreva um programa que peça ao usuário uma frase e uma letra. Encontre todas as palavras na frase que começam com essa letra e devolva na tela.
+# - Entrada de dados (input)
+# - Lista
+# - Condicional (if)
