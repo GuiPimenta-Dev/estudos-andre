@@ -84,20 +84,87 @@ print("Meio da frase", meio_frase)
 # - Entrada de dados (input)
 # - Lista
 
+'''
+def contar_palavras(frase):
+  palavras = frase.split()
+  numero_de_palavras =len(palavras)
+  return numero_de_palavras
+
+insira = input("insira a frase")
+numero =contar_palavras(insira)
+print(f"A frase tem {numero} palavras.")
+
+'''
+'''
+palavra: []
+frase = input("insira a frase:")
+palavra= frase.split()
+numero_de_palavras=len(palavra)
+print(f"O numero de palavras é {numero_de_palavras} palavras")
+'''
 # Exercício 6: Escreva um programa que peça ao usuário uma frase e devolva na tela a palavra mais longa dessa frase.
 # - Entrada de dados (input)
 # - Lista
+'''
+frase= input("insira a frase:")
+palavra= frase.split()
+numero_de_palavras= ""
+for palavra in palavra:
+ if len (palavra) > len (numero_de_palavras):
+  numero_de_palavras = palavra
+print(f"A palavra mais longa é {numero_de_palavras}.")
+'''
+
 
 # Exercício 7: Escreva um programa que peça ao usuário uma frase e devolva na tela as palavras dessa frase em ordem inversa.
 # - Entrada de dados (input)
 # - Lista
-
+'''
+frase = input("insira uma frase:")
+palavras =frase.split()
+palavras_invertidas=palavras[::-1]
+frase_invertida=' '.join(palavras_invertidas)
+print(f"A frase invertida ficara como: {frase_invertida} .")
+'''
 # Exercício 8: Escreva um programa que peça ao usuário uma frase e devolva na tela a frase sem palavras duplicadas.
 # - Entrada de dados (input)
 # - Lista
 # - Conjuntos (Set)
 
+'''
+frase = input("insira a frase:")
+
+palavras=frase.split()
+
+palavras_duplicadas=list(set(palavras))
+
+palavras_duplicadas.sort()
+
+print(f"Frase sem palavras duplicada:")
+
+print(' '.join(palavras_duplicadas))
+'''
 # Exercício 9: Escreva um programa que peça ao usuário uma frase e uma letra. Encontre todas as palavras na frase que começam com essa letra e devolva na tela.
 # - Entrada de dados (input)
 # - Lista
 # - Condicional (if)
+'''
+frase = input("Insira uma frase: ")
+letra = input("Insira uma letra: ")
+palavras_com_letra = []
+
+palavras = frase.split()
+
+ 
+for palavra in palavras:
+    if palavra.startswith(letra):
+        palavras_com_letra.append(palavra)
+
+ 
+print(f"Palavras na frase que começam com a letra '{letra}':")
+for palavra in palavras_com_letra:
+    print(palavra)
+'''
+
+
+
