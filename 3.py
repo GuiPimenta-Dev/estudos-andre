@@ -3,7 +3,15 @@
 # Dica: Use um loop `for`.
 # Exemplo de entrada: {'a': 10, 'b': 20, 'c': 30}
 # Exemplo de saída: 60
+dic = {'a': 10, 'b': 20, 'c': 30}
+tudo = 0
+for chave, valor in dic.items():
+    
+    if isinstance(valor, int):
+        tudo += valor  
 
+
+print(f"A soma dos valores do dicionário é: {tudo}")
 # Exercício 2: Contar Ocorrências de Caracteres
 # Escreva um programa que conte as ocorrências de cada caractere em uma string usando um dicionário.
 # Dica: Use um loop `for`.
