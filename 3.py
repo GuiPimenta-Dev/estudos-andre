@@ -3,7 +3,7 @@
 # Dica: Use um loop `for`.
 # Exemplo de entrada: {'a': 10, 'b': 20, 'c': 30}
 # Exemplo de saída: 60
-dic = {'a': 10, 'b': 20, 'c': 30}
+'''dic = {'a': 10, 'b': 20, 'c': 30}
 tudo = 0
 for chave, valor in dic.items():
     
@@ -12,11 +12,32 @@ for chave, valor in dic.items():
 
 
 print(f"A soma dos valores do dicionário é: {tudo}")
+'''
+
+
+
+
+
 # Exercício 2: Contar Ocorrências de Caracteres
 # Escreva um programa que conte as ocorrências de cada caractere em uma string usando um dicionário.
 # Dica: Use um loop `for`.
 # Exemplo de entrada: "banana"
 # Exemplo de saída: {'b': 1, 'a': 3, 'n': 2}
+'''
+def contar_ocorrencias(linha):
+    contagem = {}
+    
+    for caractere in linha:
+        if caractere in contagem:
+            contagem[caractere] += 1
+        else:
+            contagem[caractere] = 1
+    
+    return contagem
+linha = "banana"
+ocorrencias = contar_ocorrencias(linha)
+print(f"Ocorrências de caracteres em '{linha}': {ocorrencias}")
+'''
 
 # Exercício 3: Filtrar Números Pares
 # Escreva um programa que filtre e armazene apenas os números pares de um dicionário cujas chaves são strings e os valores são inteiros.
