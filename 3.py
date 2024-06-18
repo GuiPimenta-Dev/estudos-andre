@@ -44,6 +44,22 @@ print(f"Ocorrências de caracteres em '{linha}': {ocorrencias}")
 # Dica: Use um loop `for` e o operador `%`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # Exemplo de saída: {'b': 2, 'd': 4}
+'''
+def filtrar_numeros_pares(dicionario):
+    resultado = {}
+    for chave, valor in dicionario.items():
+        if valor % 2 == 0:
+            resultado[chave] = valor
+    return resultado
+
+entrada = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+saida = filtrar_numeros_pares(entrada)
+
+print(f'Entrada: {entrada}')
+print(f'Saída (números pares): {saida}')
+
+'''
+
 
 # Exercício 4: Produto dos Valores do Dicionário
 # Escreva um programa que calcule o produto de todos os valores de um dicionário cujas chaves são strings e os valores são inteiros.
