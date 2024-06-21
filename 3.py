@@ -66,12 +66,24 @@ print(f'Saída (números pares): {saida}')
 # Dica: Use um loop `for`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # Exemplo de saída: 24
+'''
+def produto_valores(dicionario):
+    produto = 1
+    for valor in dicionario.values():
+        produto *= valor
+    return produto
 
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+resultado = produto_valores(dicionario)
+print(f"O produto dos valores do dicionário {dicionario} é: {resultado}")
+'''
 # Exercício 5: Valores Acima de um Limite
 # Escreva um programa que armazene em uma lista todos os valores de um dicionário que sejam maiores que um certo limite.
 # Dica: Use um loop `for` e uma estrutura `if`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}, limite = 2
 # Exemplo de saída: [3, 4]
+
+
 
 # Exercício 6: Soma dos Valores com `while`
 # Escreva um programa que some todos os valores de um dicionário cujas chaves são strings e os valores são inteiros, utilizando um loop `while`.
