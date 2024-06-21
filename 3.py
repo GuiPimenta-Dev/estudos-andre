@@ -82,15 +82,42 @@ print(f"O produto dos valores do dicionário {dicionario} é: {resultado}")
 # Dica: Use um loop `for` e uma estrutura `if`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}, limite = 2
 # Exemplo de saída: [3, 4]
+'''
+def valores_acima_limite(dicionario, limite):
+    valores_acima = []
+    for valor in dicionario.values():
+        if valor > limite:
+            valores_acima.append(valor)
+    return valores_acima
 
-
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+limite = 2
+resultado = valores_acima_limite(dicionario, limite)
+print(f"Valores do dicionário {dicionario} acima do limite {limite}: {resultado}")
+'''
 
 # Exercício 6: Soma dos Valores com `while`
 # Escreva um programa que some todos os valores de um dicionário cujas chaves são strings e os valores são inteiros, utilizando um loop `while`.
 # Dica: Use `iter()` e `next()` para iterar sobre os valores do dicionário.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # Exemplo de saída: 10
+'''
+def soma_valores(dicionario):
+    soma = 0
+    it = iter(dicionario.values())
+    while True:
+        try:
+            valor = next(it)
+            soma += valor
+        except StopIteration:
+            break
+    return soma
 
+# Exemplo de uso:
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+resultado = soma_valores(dicionario)
+print(f"A soma dos valores do dicionário {dicionario} é: {resultado}")
+'''
 # Exercício 7: Valores Acima da Média
 # Escreva um programa que encontre todos os valores de um dicionário que estejam acima da média de todos os valores.
 # Dica: Use um loop `for` para calcular a média e outro loop `for` para encontrar os valores acima da média.
