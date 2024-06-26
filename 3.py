@@ -140,7 +140,7 @@ print(f'Valores acima da média: {resultado}')  '''
 # Dica: Use um loop `for`.
 # Exemplo de entrada: ["apple", "banana", "apple", "orange", "banana", "apple"]
 # Exemplo de saída: {'apple': 3, 'banana': 2, 'orange': 1}
-def contar_palavras(lista):
+'''def contar_palavras(lista):
     frequencia = {}
     for palavra in lista:
         if palavra in frequencia:
@@ -150,7 +150,7 @@ def contar_palavras(lista):
     return frequencia
 lista = ["apple", "banana", "apple", "orange", "banana", "apple"]
 resultado = contar_palavras(lista)
-print(f'Resultado da contagem de palavras: {resultado}')
+print(f'Resultado da contagem de palavras: {resultado}')'''
 
 
 # Exercício 9: Atualizar Valores do Dicionário
@@ -158,18 +158,37 @@ print(f'Resultado da contagem de palavras: {resultado}')
 # Dica: Use um loop `for`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # Exemplo de saída: {'a': 11, 'b': 12, 'c': 13, 'd': 14}
-
+'''
+def valores(dicionario):
+    dicionario_atualizado = {}
+    for chave, valor in dicionario.items():
+     novo_valor= valor + 10
+     dicionario_atualizado[chave] = novo_valor
+    
+    return dicionario_atualizado
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+resultado = valores(dicionario)
+print(f'Resultado da  atualização dos valores:{resultado} ')'''
 # Exercício 10: Remover Chaves com Valores Negativos
 # Escreva um programa que remova todas as chaves de um dicionário cujos valores sejam negativos.
 # Dica: Use um loop `for` e uma estrutura `if`.
 # Exemplo de entrada: {'a': -1, 'b': 2, 'c': -3, 'd': 4}
 # Exemplo de saída: {'b': 2, 'd': 4}
-
+'''def tirar_negativos(dicionario):
+    dicionario_atualizado = {}
+    for chave,valor in dicionario.items():
+        if valor >= 0:
+            dicionario_atualizado[chave] = valor
+    return dicionario_atualizado
+dicionario={'a': -1, 'b': 2, 'c': -3, 'd': 4} 
+resultado= tirar_negativos(dicionario)
+print(f"Tirando os numeros negativos o resultado é,{resultado}") '''   
 # Exercício 11: Interseção de Dois Dicionários
 # Escreva um programa que encontre as chaves comuns em dois dicionários e armazene essas chaves e seus valores em um novo dicionário.
 # Dica: Use loops `for` e uma estrutura `if`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3}, {'b': 2, 'c': 4, 'd': 5}
 # Exemplo de saída: {'b': 2, 'c': 3}
+
 
 # Exercício 12: Contagem de Caracteres em Palavras
 # Escreva um programa que conte a frequência de cada caractere em uma lista de palavras e armazene os resultados em um dicionário.
