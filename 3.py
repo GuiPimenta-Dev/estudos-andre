@@ -140,6 +140,18 @@ print(f'Valores acima da média: {resultado}')  '''
 # Dica: Use um loop `for`.
 # Exemplo de entrada: ["apple", "banana", "apple", "orange", "banana", "apple"]
 # Exemplo de saída: {'apple': 3, 'banana': 2, 'orange': 1}
+def contar_palavras(lista):
+    frequencia = {}
+    for palavra in lista:
+        if palavra in frequencia:
+            frequencia[palavra] += 1
+        else:
+            frequencia[palavra] = 1
+    return frequencia
+lista = ["apple", "banana", "apple", "orange", "banana", "apple"]
+resultado = contar_palavras(lista)
+print(f'Resultado da contagem de palavras: {resultado}')
+
 
 # Exercício 9: Atualizar Valores do Dicionário
 # Escreva um programa que percorra um dicionário e atualize seus valores, adicionando 10 a cada valor.
