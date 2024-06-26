@@ -235,7 +235,24 @@ print(f"A frequencia de cada caractere é,{resultado}")
 # (Usuário) b 2
 # (Usuário) Q
 # Exemplo de saída: {'a': 1, 'b': 2}
+'''
 
+def entrada_usuario():
+    dicionario = {}
+    while True:
+        entrada = input("(Usuário) Insira chave e valor (ou 'Q' para sair): ")
+        
+        if entrada.upper() == 'Q':
+            break
+        try:
+            chave, valor = entrada.split()
+            dicionario[chave] = int(valor)
+        except ValueError:
+            print("Entrada inválida. Por favor, insira no formato correto.")
+    return dicionario
+resultado = entrada_usuario()
+print(f"Exemplo de saída: {resultado}")
+'''
 # Exercício 15: Calculadora Simples
 # Escreva um programa que apresente um menu interativo para o usuário realizar operações matemáticas básicas (soma, subtração, multiplicação e divisão) até que ele escolha sair.
 # Exemplo de entrada: 
