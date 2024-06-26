@@ -188,7 +188,13 @@ print(f"Tirando os numeros negativos o resultado é,{resultado}") '''
 # Dica: Use loops `for` e uma estrutura `if`.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3}, {'b': 2, 'c': 4, 'd': 5}
 # Exemplo de saída: {'b': 2, 'c': 3}
+def interseção_dicionario(dicionario1,dicionario2)
+dicionario_interseção = {}
 
+for chave in dicionario1:
+    if chave in dicionario2:
+        dicionario_interseção[chave] = dicionario1[chave]
+        
 
 # Exercício 12: Contagem de Caracteres em Palavras
 # Escreva um programa que conte a frequência de cada caractere em uma lista de palavras e armazene os resultados em um dicionário.
