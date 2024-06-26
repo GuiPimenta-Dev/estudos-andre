@@ -208,7 +208,26 @@ print(resultado)
 # Dica: Use um loop `for` aninhado.
 # Exemplo de entrada: ["apple", "banana"]
 # Exemplo de saída: {'a': 4, 'p': 2, 'l': 1, 'e': 1, 'b': 1, 'n': 2}
+'''def contar_caracteres(palavra):
+    contagem={}
+    for palavra in palavra:
+        
+      for caracteres in palavra:
+          
+       if caracteres in contagem:
+           
+          contagem[caracteres] +=1
+          
+       else:
+           contagem[caracteres] =1
+    return contagem
 
+palavra =["apple", "banana"]
+
+resultado =contar_caracteres(palavra)
+print(f"A frequencia de cada caractere é,{resultado}")
+   '''     
+       
 # Exercício 13: Entrada de Usuário até 'Q'
 # Escreva um programa que peça ao usuário para inserir valores em um dicionário até que ele digite 'Q' para sair.
 # Exemplo de entrada: 
