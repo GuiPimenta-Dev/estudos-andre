@@ -123,6 +123,17 @@ print(f"A soma dos valores do dicionário {dicionario} é: {resultado}")
 # Dica: Use um loop `for` para calcular a média e outro loop `for` para encontrar os valores acima da média.
 # Exemplo de entrada: {'a': 1, 'b': 2, 'c': 3, 'd': 4}
 # Exemplo de saída: [3, 4]
+'''def valores_acima_da_media(dicionario):
+    valores = list(dicionario.values())
+    media = sum(valores) / len(valores)
+    acima_da_media = []
+    for valor in valores:
+        if valor > media:
+            acima_da_media.append(valor)
+    return acima_da_media
+dicionario = {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+resultado = valores_acima_da_media(dicionario)
+print(f'Valores acima da média: {resultado}')  '''
 
 # Exercício 8: Contagem de Palavras
 # Escreva um programa que conte a frequência de cada palavra em uma lista de strings e armazene os resultados em um dicionário.
