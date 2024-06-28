@@ -264,7 +264,8 @@ print(f"Exemplo de saída: {resultado}")
 # (Usuário escolhe 1) 4 5
 # Exemplo de saída: 9
 
-'''
+
+''''
 def soma(a, b):
     return a + b
 
@@ -319,8 +320,8 @@ def menu():
 
 if __name__ == "__main__":
     menu()
-'''
-            
+
+'''       
     
               
 
@@ -329,3 +330,40 @@ if __name__ == "__main__":
 ###################
 # Exercício 16: Jogo da Forca
 # Escreva um jogo da forca em que o usuário deve adivinhar uma palavra secreta com vidas infinitas até o usuário acertar a palavra.
+'''
+def jogo_da_forca():
+    nome=input("Qual seu nome?")
+    palavra_secreta = "COMIDA"
+    letras_corretas = []
+    letras_erradas = []
+    
+    while True:
+        palavra_mostrada = ""
+        for letra in palavra_secreta:
+            if letra in letras_corretas:
+                palavra_mostrada += letra + " "
+            else:
+                palavra_mostrada += "_ "
+        
+        print(f"\nPalavra: {palavra_mostrada}")
+        palpite = input("Digite uma letra: ").upper()
+        
+        if palpite in letras_corretas or palpite in letras_erradas:
+            print("Você já tentou essa letra. Tente Novamente.")
+            continue
+        
+        if palpite in palavra_secreta:
+            print("!!! Letra Correta !!!")
+            letras_corretas.append(palpite)
+        else:
+            print("Letra incorreta")
+            letras_erradas.append(palpite)
+            
+        acertou_tudo = all(letra in letras_corretas for letra in palavra_secreta)
+        if acertou_tudo:
+            print(f"\nParabéns!!! {nome}!!!, Você Acertou a palavra secreta: {palavra_secreta}")
+            break
+
+if __name__ == "__main__":
+    jogo_da_forca()
+'''
