@@ -76,7 +76,7 @@ import time
 
 
 class Ryze():
-    mana=400
+    mana=1000
     
     def __init__(self):
         self.last_used_time = {"Q": 0, "W": 0, "E": 0, "R": 0}
@@ -88,20 +88,27 @@ class Ryze():
             if mana_suficiente is True:
                 print("Ryze usou Q")
                 self.last_used_time["Q"] = time.time()
-    def E(self):
-        if self.check_cooldown("E"):
-            mana_suficiente = self.valida_mana (50)
-            if mana_suficiente is True:
-                print("Ryze usou E")
                 
     def W(self):
-        mana_suficiente = self.valida_mana (80)
-        if mana_suficiente is True:
-            print("Ryze usou W")
+        if self.check_cooldown("W"):
+            mana_suficiente = self.valida_mana (50)
+            if mana_suficiente is True:
+                print("Ryze usou W")
+                self.last_used_time["W"] = time.time()
+                
+    def E(self):
+        if self.check_cooldown("E"):
+            mana_suficiente = self.valida_mana (80)
+            if mana_suficiente is True:
+                print("Ryze usou E")
+                self.last_used_time["E"] = time.time()
+            
     def R(self):
-        mana_suficiente = self.valida_mana (150)
-        if mana_suficiente is True:
-            print("Ryze usou R")
+        if self.check_cooldown("R"):
+            mana_suficiente = self.valida_mana (150)
+            if mana_suficiente is True:
+                print("Ryze usou R")
+                self.last_used_time["R"] = time.time()
         
     def valida_mana(self, falta_mana):
         mana_atualizada= self.mana - falta_mana
@@ -123,11 +130,14 @@ class Ryze():
 ryze= Ryze()
 
 print(ryze.mana)
-
-ryze.R()
+ryze.Q()
 ryze.Q()
 ryze.E()
+ryze.E()
 ryze.W()
-    
-
+ryze.W()
+ryze.Q()
+ryze.R()
+ryze.R()
 print(ryze.mana)
+
