@@ -87,6 +87,7 @@ class Ryze():
             mana_suficiente = self.valida_mana (60)
             if mana_suficiente is True:
                 print("Ryze usou Q")
+                print("100 de dano causado")
                 self.last_used_time["Q"] = time.time()
                 
     def W(self):
@@ -94,6 +95,7 @@ class Ryze():
             mana_suficiente = self.valida_mana (50)
             if mana_suficiente is True:
                 print("Ryze usou W")
+                print("80 de dano causado")
                 self.last_used_time["W"] = time.time()
                 
     def E(self):
@@ -101,6 +103,7 @@ class Ryze():
             mana_suficiente = self.valida_mana (80)
             if mana_suficiente is True:
                 print("Ryze usou E")
+                print("50 de dano causado")
                 self.last_used_time["E"] = time.time()
             
     def R(self):
