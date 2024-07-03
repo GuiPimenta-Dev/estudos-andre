@@ -1,3 +1,4 @@
+
 #### CLASSES ####
 
 # class Carro():
@@ -71,22 +72,34 @@
 # Exercicios numero 2, criar outro campeão do lol com as mesmas regras:porém ele não pode usar a mesma skill duas vezes seguidas: se ele tentar usar 2 vezes
 # printar dano ("Causou 50 de dano").
 
+import time
+
+
 class Ryze():
     mana=400
+    
+    def __init__(self):
+        self.last_used_time = {"Q": 0, "W": 0, "E": 0, "R": 0}
+        self.cooldown = 1.5
+        
     def Q(self):
-        mana_suficiente = self.valida_mana (70)
-        if mana_suficiente is True:
-            print("Ryze usou Q")
+        if self.check_cooldown("Q"):
+            mana_suficiente = self.valida_mana (60)
+            if mana_suficiente is True:
+                print("Ryze usou Q")
+                self.last_used_time["Q"] = time.time()
     def E(self):
-        mana_suficiente = self.valida_mana (70)
-        if mana_suficiente is True:
-            print("Ryze usou E")
+        if self.check_cooldown("E"):
+            mana_suficiente = self.valida_mana (50)
+            if mana_suficiente is True:
+                print("Ryze usou E")
+                
     def W(self):
-        mana_suficiente = self.valida_mana (70)
+        mana_suficiente = self.valida_mana (80)
         if mana_suficiente is True:
             print("Ryze usou W")
     def R(self):
-        mana_suficiente = self.valida_mana (70)
+        mana_suficiente = self.valida_mana (150)
         if mana_suficiente is True:
             print("Ryze usou R")
         
@@ -97,6 +110,14 @@ class Ryze():
             return True
         else:
             print("Ryze esta sem mana")
+            return False
+        
+    def check_cooldown(self, skill):
+        current_time = time.time()
+        if current_time - self.last_used_time[skill] >= self.cooldown:
+            return True
+        else:
+            print(f"{skill} está em cooldown")
             return False
         
 ryze= Ryze()
