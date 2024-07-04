@@ -71,7 +71,7 @@
 
 # Exercicios numero 2, criar outro campeão do lol com as mesmas regras:porém ele não pode usar a mesma skill duas vezes seguidas: se ele tentar usar 2 vezes
 # printar dano ("Causou 50 de dano").
-
+'''
 import time
 
 
@@ -143,4 +143,4 @@ ryze.Q()
 ryze.R()
 ryze.R()
 print(ryze.mana)
-
+'''
