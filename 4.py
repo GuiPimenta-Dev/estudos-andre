@@ -144,3 +144,8 @@ ryze.R()
 ryze.R()
 print(ryze.mana)
 '''
+
+# Exercicios 3, criar Uma luta entre Rengar e Ryze, Adicione as propriedades: Dano (por skill), Vida (1000 para ambos), Ataque Basico.
+# A luta deve durar até um dos dois campeões ficar com a vida menor ou igual a 0.
+# O cooldown de cada skill é de 1.5 segundos, e da ultimate é 5 segundos.
+# Caso o campeão não tenha mana suficiente para usar uma skill, ele deve usar somente o ataque basico.
