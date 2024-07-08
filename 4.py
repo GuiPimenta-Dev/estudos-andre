@@ -169,6 +169,17 @@ class Boneco:
             inimigo.vida -= self.ultima_ult
             self.ultima_ult = tempo_atual
         elif tempo_atual - self.ultima_skill >= self.cooldown_skill:
+            print(f"{self.nome} usa uma skill em {inimigo.nome}causando
+                  {self.dano_skill} de dano!!!")
+            inimigo.vida -= self.dano_skill
+            self.ultima_skill = tempo_atual
+        else:
+            print(f"{self.nome} deu ataque basico em {inimigo.nome} causando
+                  {self.ataque_basico} de dano ao inimgo!!")
+            inimigo.vida -= self.ataque_basico
+            
+        
+            
          
                  
 
