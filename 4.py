@@ -163,9 +163,13 @@ class Boneco:
         self.ultima_ult = -cooldown_ult
         
     def atacar(self, inimigo, tempo_atual):
-        if tempo_atual - self.ultima_ultimate >= self.cooldown_ult:
-            print(f"{self.nome} usa ultimate em {oponente.nome} causando
-                  {self.dano_skill} de dano!") 
+        if tempo_atual - self.ultima_ult >= self.cooldown_ult:
+            print(f"{self.nome} usa ultimate em {inimigo.nome} causando
+                  {self.dano_skill} de dano!")
+            inimigo.vida -= self.ultima_ult
+            self.ultima_ult = tempo_atual
+        elif tempo_atual - self.ultima_skill >= self.cooldown_skill:
+         
                  
 
         
