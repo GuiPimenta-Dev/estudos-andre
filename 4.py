@@ -149,3 +149,23 @@ print(ryze.mana)
 # A luta deve durar até um dos dois campeões ficar com a vida menor ou igual a 0.
 # O cooldown de cada skill é de 1.5 segundos, e da ultimate é 5 segundos.
 # Caso o campeão não tenha mana suficiente para usar uma skill, ele deve usar somente o ataque basico.
+
+class Boneco:
+    def __init__(self, nome, vida, ataque_basico, dano_skill, dano_ult, cooldown_skill, cooldown_ult):
+        self.nome = nome
+        self.vida = vida
+        self.ataque_basico = ataque_basico
+        self.dano_skill = dano_skill
+        self.dano_ult = dano_ult
+        self.cooldown_skill = cooldown_skill
+        self.cooldown_ult = cooldown_ult
+        self.ultima_skill = -cooldown_skill  
+        self.ultima_ult = -cooldown_ult
+        
+    def atacar(self, inimigo, tempo_atual):
+        if tempo_atual - self.ultima_ultimate >= self.cooldown_ult:
+            print(f"{self.nome} usa ultimate em {oponente.nome} causando
+                  {self.dano_skill} de dano!") 
+                 
+
+        
