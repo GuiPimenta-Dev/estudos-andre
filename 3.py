@@ -330,7 +330,7 @@ if __name__ == "__main__":
 ###################
 # Exercício 16: Jogo da Forca
 # Escreva um jogo da forca em que o usuário deve adivinhar uma palavra secreta com vidas infinitas até o usuário acertar a palavra.
-'''
+
 def jogo_da_forca():
     nome=input("Qual seu nome?")
     palavra_secreta = "COMIDA"
@@ -366,4 +366,3 @@ def jogo_da_forca():
 
 if __name__ == "__main__":
     jogo_da_forca()
-'''
