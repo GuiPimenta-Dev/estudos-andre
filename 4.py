@@ -149,6 +149,7 @@ print(ryze.mana)
 # A luta deve durar até um dos dois campeões ficar com a vida menor ou igual a 0.
 # O cooldown de cada skill é de 1.5 segundos, e da ultimate é 5 segundos.
 # Caso o campeão não tenha mana suficiente para usar uma skill, ele deve usar somente o ataque basico.
+import random
 import time
 
 
@@ -186,6 +187,33 @@ class Boneco:
 def luta(rengar, ryze):
     tempo = 0
     intervalo_tempo = 1
+    
+    while rengar.vida > 0 and ryze.vida > 0:
+        if random.choice ([True, False]):
+            rengar.atacar(ryze, tempo)
+        else:
+            ryze.atacar(rengar, tempo)
+        
+        print(f"Status:{rengar.nome} (vida:{rengar.vida}) vs {ryze.nome}(Vida: {ryze.vida})\n")
+        tempo += intervalo_tempo
+        time.sleep(intervalo_tempo)
+        
+    if rengar.vida <= 0 and ryze.vida <= 0:
+        print("Ambos os campeões morreram ao mesmo tempo!")
+    elif rengar.vida <= 0:
+        print(f"{ryze.nome} venceu a luta!")
+    else:
+        print(f"{rengar.nome}venceu a luta!")
+    
+rengar = Boneco(nome="Rengar",vida=1000, ataque_basico=80, dano_skill=150, dano_ult=300, cooldown_skill=1.5,cooldown_ult=5)
+ryze = Boneco(nome="Ryze",vida=1000, ataque_basico=50,dano_skill=300, dano_ult=0, cooldown_skill=1.5, cooldown_ult=5)
+
+luta(rengar ,ryze)
+        
+            
+            
+            
+            
         
             
          
