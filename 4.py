@@ -172,7 +172,7 @@ class Boneco:
         if tempo_atual - self.ultima_ult >= self.cooldown_ult:
             print(f"{self.nome} usa ultimate em {inimigo.nome} causando
                   {self.dano_skill} de dano!")
-            inimigo.vida -= self.ultima_ult
+            inimigo.vida -= self.dano_ult
             self.ultima_ult = tempo_atual
         elif tempo_atual - self.ultima_skill >= self.cooldown_skill:
             print(f"{self.nome} usa uma skill em {inimigo.nome}causando
@@ -194,6 +194,8 @@ def luta(rengar, ryze):
         else:
             ryze.atacar(rengar, tempo)
         
+        
+        
         print(f"Status:{rengar.nome} (vida:{rengar.vida}) vs {ryze.nome}(Vida: {ryze.vida})\n")
         tempo += intervalo_tempo
         time.sleep(intervalo_tempo)
@@ -203,7 +205,7 @@ def luta(rengar, ryze):
     elif rengar.vida <= 0:
         print(f"{ryze.nome} venceu a luta!")
     else:
-        print(f"{rengar.nome}venceu a luta!")
+        print(f"{rengar.nome} venceu a luta!")
     
 rengar = Boneco(nome="Rengar",vida=1000, ataque_basico=80, dano_skill=150, dano_ult=300, cooldown_skill=1.5,cooldown_ult=5)
 ryze = Boneco(nome="Ryze",vida=1000, ataque_basico=50,dano_skill=300, dano_ult=0, cooldown_skill=1.5, cooldown_ult=5)
