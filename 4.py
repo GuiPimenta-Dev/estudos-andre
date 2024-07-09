@@ -149,6 +149,7 @@ print(ryze.mana)
 # A luta deve durar até um dos dois campeões ficar com a vida menor ou igual a 0.
 # O cooldown de cada skill é de 1.5 segundos, e da ultimate é 5 segundos.
 # Caso o campeão não tenha mana suficiente para usar uma skill, ele deve usar somente o ataque basico.
+
 import random
 import time
 
@@ -170,18 +171,15 @@ class Boneco:
         
     def atacar(self, inimigo, tempo_atual):
         if tempo_atual - self.ultima_ult >= self.cooldown_ult:
-            print(f"{self.nome} usa ultimate em {inimigo.nome} causando
-                  {self.dano_skill} de dano!")
+            print(f"{self.nome} usa ultimate em {inimigo.nome} causando {self.dano_skill} de dano!")
             inimigo.vida -= self.dano_ult
             self.ultima_ult = tempo_atual
         elif tempo_atual - self.ultima_skill >= self.cooldown_skill:
-            print(f"{self.nome} usa uma skill em {inimigo.nome}causando
-                  {self.dano_skill} de dano!!!")
+            print(f"{self.nome} usa uma skill em {inimigo.nome} causando {self.dano_skill} de dano!!!")
             inimigo.vida -= self.dano_skill
             self.ultima_skill = tempo_atual
         else:
-            print(f"{self.nome} deu ataque basico em {inimigo.nome} causando
-                  {self.ataque_basico} de dano ao inimgo!!")
+            print(f"{self.nome} deu ataque basico em {inimigo.nome} causando {self.ataque_basico} de dano ao inimigo!!")
             inimigo.vida -= self.ataque_basico
     
 def luta(rengar, ryze):
@@ -208,17 +206,7 @@ def luta(rengar, ryze):
         print(f"{rengar.nome} venceu a luta!")
     
 rengar = Boneco(nome="Rengar",vida=1000, ataque_basico=80, dano_skill=150, dano_ult=300, cooldown_skill=1.5,cooldown_ult=5)
-ryze = Boneco(nome="Ryze",vida=1000, ataque_basico=50,dano_skill=300, dano_ult=0, cooldown_skill=1.5, cooldown_ult=5)
+ryze = Boneco(nome="Ryze",vida=950, ataque_basico=70,dano_skill=700, dano_ult=300, cooldown_skill=1.5, cooldown_ult=5)
 
 luta(rengar ,ryze)
-        
-            
-            
-            
-            
-        
-            
-         
-                 
-
         
